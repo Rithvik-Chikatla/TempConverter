@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Temperature Converter</title>
+    <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js"></script>
+    <link rel="shortcut icon" href="thermometer.ico" type="image/x-icon">
+</head>
+<body>
+    <div class="main">
+        <div class="container">
+            <div class="inputs">
+                <label for="" class="box_label" id="inc">Celsius</label>
+                <input class="box" type="number" id="inputc" placeholder="" oninput="tempConverter(this.id, this.value)" onchange="tempConverter(this.id, this.value)">
+            </div>
+            <div class="inputs">
+                <label for="" class="box_label" id="inf">Fahrenheit</label>
+                <input class="box"  type="number" id="inputf" placeholder="" oninput="tempConverter(this.id, this.value)" onchange="tempConverter(this.id, this.value)" >
+                <!-- <p id></p> -->
+            </div>
+            <div class="inputs">
+                <label for=""  class="box_label" id="ink">Kelvin</label>
+                <input class="box" type="number" name="" id="inputk" placeholder="" oninput="tempConverter(this.id, this.value)" onchange="tempConverter(this.id, this.value)">
+            </div>
+        </div>
+        <div ><button class="btn" onclick="clearFn()">Clear</button></div>
+    </div>
+</body>
+</html>
